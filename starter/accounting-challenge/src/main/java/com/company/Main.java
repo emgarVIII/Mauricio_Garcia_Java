@@ -46,6 +46,8 @@ public class Main {
                 customer.setName(companyName);
                 customerList.add(customer);
             }
+
+            // assign values
            AccountRecord record = new AccountRecord();
            record.setCharge(charge);
            record.setChargeDate(date);
@@ -64,6 +66,7 @@ public class Main {
         }
          return null; // if nothing found
     }
+
     // prints customer list in order of: positive accounts -> neg accounts -> zero accounts
     private static void printCustomerList(ArrayList<Customer> customers){
         ArrayList<Customer> pos = new ArrayList<>();
