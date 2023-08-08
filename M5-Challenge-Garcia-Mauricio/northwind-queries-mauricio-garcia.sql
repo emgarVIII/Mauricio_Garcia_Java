@@ -8,7 +8,7 @@ FROM northwind.products;
 -- What products are made by Dell?
 SELECT * 
 FROM products 
-WHERE product_name = "Dell Inspirion"; 
+WHERE product_name = "%Dell%";
 
 -- List all the orders shipped to Pennsylvania.
 SELECT * 
