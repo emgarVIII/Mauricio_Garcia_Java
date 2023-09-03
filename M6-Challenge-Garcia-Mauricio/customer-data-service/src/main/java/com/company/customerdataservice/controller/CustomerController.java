@@ -24,7 +24,7 @@ public class CustomerController {
     }
 
     // A PUT route that updates an existing customer.
-    @PutMapping("/customers/{id}")
+    @PutMapping("/customers")
     @ResponseStatus(HttpStatus.OK)
     public void updateCustomer(@RequestBody Customer c) {
         repo.save(c);
