@@ -15,6 +15,7 @@ class CustomerTest {
         customer.setId(3);
         customer.setName("The Krusty Krab");
         record = new AccountRecord();
+
     }
 
     @org.junit.jupiter.api.Test
@@ -72,7 +73,7 @@ class CustomerTest {
     void testToString() {
         record.setCharge(-21000);
         customer.getCharges().add(record);
-        System.out.println(customer.toString());
+        assertEquals("ID: 3, Customer Name: The Krusty Krab, Balance: -21000"+"\n", customer.toString());
     }
 
     void printOutput(int expected, int actual){
